@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:  #575757;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: #d4d4d4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  height: 75%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-family: 'Poppins' ,sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(97% - 10px);
+  padding: 10px;
+  border: 1px solid #403b3b;
+  border-radius: 5px;
+  font-size: 16px;
+  
+  
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.file-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.file-input input[type="file"] {
+  display: none;
+}
+
+.file-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #000000;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f9f9f9;
+  color: #b3b3b3;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.file-input:hover {
+  background: #e6e6e6;
+}
+
+.file-input label {
+  display: block;
+  margin-bottom: 5px;
+  color: #383838;
+}
+
+.file-input input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-input #fileName {
+  margin-top: 10px;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+}
+
+button[type="submit"] {
+  width: 50%;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #393939;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background: #6e6e6e;
+}
+#report{
+
+  color: #000000;
+  font-family: 'Roboto';
+  font-weight: 700;
+  margin-top: 10px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mass Mail Dispatcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Mass Mail Dispatcher</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="fromEmail">Email:</label>
+        <input type="email" id="fromEmail" name="fromEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group file-input">
+        <label for="file">CSV File</label>
+        <input type="file" id="file" name="file" accept=".csv" required>
+        <div id="fileName">No file selected</div>
+      </div>
+      <button type="submit">Upload and Send</button>
+      <div id="report"></div>
+    </form>
+  </div>
+
+  <script src="dispatcher.js"></script>
+</body>
+</html>
